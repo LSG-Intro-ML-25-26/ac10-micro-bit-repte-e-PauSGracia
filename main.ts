@@ -6,12 +6,12 @@ function graph() {
 }
 
 function show_drop() {
-    let x: number;
-    let y: number;
+    
+    
     let accX = input.acceleration(Dimension.X)
     let accY = input.acceleration(Dimension.Y)
     led.plot(x, y)
-    basic.pause(500)
+    basic.pause(50)
     basic.clearScreen()
     if (accX <= 150 && x > 0) {
         x = x - 1

@@ -20,10 +20,12 @@ def graph():
     led.plot_bar_graph(input.temperature(), 50)
 
 def show_drop():
+    global x
+    global y
     accX = input.acceleration(Dimension.X)
     accY = input.acceleration(Dimension.Y)
     led.plot(x, y)
-    basic.pause(500)
+    basic.pause(50)
     basic.clear_screen()
 
     if accX <= 150 and x > 0:
